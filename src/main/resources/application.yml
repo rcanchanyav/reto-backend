@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: service-backend
+  profiles:
+    active: dev
+api:
+  host:
+    baseurl: https://reqres.in/api/users

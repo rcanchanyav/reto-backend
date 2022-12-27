@@ -1,0 +1,35 @@
+{
+  "operationDate": "20221226T235141Z",
+  "data": [
+    {
+      "id": "1",
+      "email": "george.bluth@reqres.in",
+      "last_name": "Bluth"
+    },
+    {
+      "id": "2",
+      "email": "janet.weaver@reqres.in",
+      "last_name": "Weaver"
+    },
+    {
+      "id": "3",
+      "email": "emma.wong@reqres.in",
+      "last_name": "Wong"
+    },
+    {
+      "id": "4",
+      "email": "eve.holt@reqres.in",
+      "last_name": "Holt"
+    },
+    {
+      "id": "5",
+      "email": "charles.morris@reqres.in",
+      "last_name": "Morris"
+    },
+    {
+      "id": "6",
+      "email": "tracey.ramos@reqres.in",
+      "last_name": "Ramos"
+    }
+  ]
+}
