@@ -32,7 +32,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public ResultadoBusquedaMantenimiento consultarProgramacion(
 			Map<String, Object> parametros			
-	) throws Exception;
+	);
 	
 	/**
 	 * Método que permite obtener la lista de programacions.
@@ -42,7 +42,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public List<ProgramacionMantenimiento> obtenerListaProgramaciones(
 			Map<String,Object> parametrosConsulta
-	) throws Exception;
+	);
 	
 	/**
 	 * Método que permite obtener la cantidad de registros de las programaciones según la búsqueda.
@@ -52,7 +52,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public int obtenerCantidadProgramaciones(
 			Map<String,Object> parametrosConsulta
-	) throws Exception;
+	);
 	
 	/**
 	 * Método que consultar los inmuebles registrados en una proyeccion de costo, para luego ser programados.
@@ -62,7 +62,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public ResultadoBusquedaInmueble consultarInmueble(
 			ProgramacionMantenimiento busquedaProgramacion
-	) throws Exception;
+	);
 	
 	/**
 	 * Método que permite consultar las etapas de una programacion
@@ -72,7 +72,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public ResultadoBusquedaMantenimiento consultarProgramacionMantenimientoDetalle(
 			ProgramacionMantenimientoDetalle programacionMantenimientoDetalle
-	) throws Exception;
+	);
 	
 	/**
 	 * Método que permite obtener la lista de las etapas de una programacion
@@ -82,7 +82,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public List<ProgramacionMantenimientoDetalle> obtenerListaProgramacionesMantenimientoDetalle(
 			Map<String,Object> parametrosConsulta
-	) throws Exception;
+	);
 	
 	/**
 	 * Método que permite registrar datos de la programacion.
@@ -91,7 +91,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public void registrarProgramacion(
 			ProgramacionMantenimiento programacionMatenimiento
-	) throws Exception;
+	);
 	
 	/**
 	 * Método que permite eliminar los datos de la programacion del mantenimiento.
@@ -100,7 +100,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public void eliminarProgramacionMantenimiento(
 			ProgramacionMantenimiento programacionMantenimiento
-	) throws Exception;
+	);
 	
 	/**
 	 * Método que permite consultar la programacion del mantenimiento según el código
@@ -110,7 +110,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public ProgramacionMantenimiento obtenerProgramacionMantenimiento(
 			int codigoProgramacion
-	) throws Exception;
+	);
 	
 	/**
 	 * Método que permite modificar datos de la programacion de mantenimiento.
@@ -119,7 +119,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public void modificarProgramacionMantenimiento(
 			ProgramacionMantenimiento programacionMantenimiento
-	) throws Exception;
+	);
 	
 	//eliminarProgramacionMantenimientoDetalle
 	/**
@@ -129,7 +129,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public void eliminarProgramacionMantenimientoDetalle(
 			ProgramacionMantenimientoDetalle programacionMantenimientoDetalle
-	) throws Exception;
+	);
 	
 	
 	/**
@@ -140,7 +140,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public ProgramacionMantenimientoDetalle obtenerEtapaProgramacionMatenimientoDetalle(
 			ProgramacionMantenimientoDetalle pmd
-	) throws Exception;
+	);
 	
 	/**
 	 * Método que permite modificar datos de la etapa de programacion de mantenimiento.
@@ -149,7 +149,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public void modificarProgramacionMantenimientoDetalle(
 			ProgramacionMantenimientoDetalle pmd
-	) throws Exception;
+	);
 	
 	
 	/**
@@ -160,7 +160,7 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public ResultadoBusquedaMantenimiento obtenerProgramacionMantenimientoDetalle(
 			ProgramacionMantenimiento programacionMantenimiento
-	) throws Exception;
+	);
 	
 	/**
 	 * Método que permite consultar el monto total del servicio que se envia como parámetro
@@ -170,5 +170,5 @@ public interface ProgramacionMantenimientoService {
 	 */
 	public Map<String, Object> obtenerMontoTotalServicioProgramacion (
 			Map<String, Object> parametros
-	) throws Exception;
+	);
 }
