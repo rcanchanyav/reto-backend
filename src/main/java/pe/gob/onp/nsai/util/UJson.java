@@ -38,7 +38,7 @@ public class UJson {
      * @param tipo tipo de clase a ser formateado, tipo Class<T>.
      * @return retorno objeto generado al leer el valor del arreglo de bytes, tipo <T> T.
      */
-    public static <T> T convertirJsonATipo(String cadenajson,Class<T> tipo) throws Exception{
+    public static <T> T convertirJsonATipo(String cadenajson,Class<T> tipo){
         T retorno=null;
         try {
             InputStream flujoEntrada=new ByteArrayInputStream(cadenajson.getBytes());
@@ -50,7 +50,7 @@ public class UJson {
         return retorno;
     }
 
-    public static <T> List<T> convertirListJsonAListaTipo(String cadenaJson, TypeReference<List<T>> typeReference) throws Exception {
+    public static <T> List<T> convertirListJsonAListaTipo(String cadenaJson, TypeReference<List<T>> typeReference){
         if (cadenaJson == null || cadenaJson.trim().isEmpty()) {
             return Collections.emptyList();
         }

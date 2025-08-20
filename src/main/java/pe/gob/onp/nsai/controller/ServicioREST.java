@@ -58,7 +58,7 @@ public class ServicioREST {
      * Método que permite obtener el identificador del error
      * @return tiempo en milisegundos, tipo Long.
      */
-    protected Long idError(){
+    public Long idError(){
         return System.currentTimeMillis();
     }
 
@@ -70,7 +70,7 @@ public class ServicioREST {
      * Método que permite obtener los datos de auditoria del usuario de creación.
      * @return auditoria datos de auditoria, tipo Auditoria.
      */
-    protected Auditoria obtenerAuditoriaCreacion(HttpHeaders headers, HttpServletRequest request)  {
+    public Auditoria obtenerAuditoriaCreacion(HttpHeaders headers, HttpServletRequest request)  {
         log.info("NK: obtenerAuditoriaCreacion : inicio");
         Auditoria auditoria=new Auditoria();
         String user = obtenerCuerpoJWT(headers);
@@ -82,7 +82,7 @@ public class ServicioREST {
      * Método que permite obtener los datos de auditoria del usuario de modificación.
      * @return auditoria datos de auditoria, tipo Auditoria.
      */
-    protected Auditoria obtenerAuditoriaModificacion(HttpHeaders headers, HttpServletRequest request)  {
+    public Auditoria obtenerAuditoriaModificacion(HttpHeaders headers, HttpServletRequest request)  {
         log.info("NK: obtenerAuditoriaModificacion : inicio");
         Auditoria auditoria=new Auditoria();
         String user = obtenerCuerpoJWT(headers);
@@ -95,7 +95,7 @@ public class ServicioREST {
         return headers.getFirst("x-user");
     }
 
-    public byte[] exportarJasper(String jasper, Map<String, Object> parameters, String tipoArchivo, Auditoria auditoria) throws Exception {
+    public byte[] exportarJasper(String jasper, Map<String, Object> parameters, String tipoArchivo, Auditoria auditoria) {
         log.debug("Generando reporte - Jasper: {}, Tipo archivo: {}", jasper, tipoArchivo);
 
         try (ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
